@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mon-mini-site</title>
+</head>
+
+<body>
+    <h1>Page de conctact</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Presentation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h2>formulaire de contact</h2>
+    <p>Veuillez remplir ce formulaire pour envoyer un message</p>
+    <form action="">
+        <label for="Nom">Nom :</label>
+        <input id="prenom" name="nom"  placeholder="Entrez nom"  required></input> <br> <br>
+        <label for="prenom" >Prénom :</label>
+        <input type="text"  id="prenom" name="prenom" placeholder="Entrez prenom" required> <br><br>
+        <label for="email" >Adresse email :</label>
+        <input type="text" name="email" id="email" placeholder="Entrez exemple@email.com"  required> <br><br>
+        <label for="telephone">Telephone</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="+237 6 XX XX XX XX"> <br><br>
+        <label for="message">Message :</label>
+        <br>
+        <textarea name="message" id="message" rows="5" cols="40"  placeholder="Ecrivez votre message ici" required></textarea>
+        <BR>
+            <label for="domaine">Domaine d'interet :</label>
+            <select name="domaine" id="domaine" required>
+                <option value="">-- Choisir un domaine --</option>
+                <option value="reseaux">Réseaux informatiques</option>
+                <option value="Cybersecurite">Cybersecuriteoption>
+                <option value="Developpement-web">Developpement web</option>
+                <option value="administration-systeme">Administration systeme</option>
+            </select><br><br>
+            <label for="">Motif du message :</label>
+            <select name="motif" id="motif" required>
+                <option value="">-- Choisir un motif --</option>
+                <option value="information">Demande d'information</option>
+                     <option value="projet">Demande de stage</option>
+                <option value="projet">Proposition de projet</option>
+                <option value="autre">Autre demande</option>
+            </select><br><br>
+            <p>Statut du visiteur :</p>
+            <input type="radio" name="statut" id="etudiant" value="required">
+          <label for="etudiant" >Etudiant</label><br>
+          <input type="radio" name="statut" id="enseignant" value="enseignant">
+          <label for="enseignant" >Enseignant</label>
+          <br>
+          <input type="radio" name="statut" id="professionnel" value="professionnel">
+          <label for="professionnel">Professionnel</label>
+          <br><br>
+          <input type="checkbox" name="confirmation" id="confirmation" required>
+          <label for="confirmation">Je confirme que les Informations saisis sont correctes.</label>
+<br> <br>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Effacer</button>
+    </form>
+</body>
+</html>
